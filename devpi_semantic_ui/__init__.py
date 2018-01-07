@@ -18,5 +18,5 @@ def devpiserver_pyramid_configure(config, pyramid_config):
 
 
 def includeme(config):
-    config.add_route('searchapi', '/+search', accept='application/json')
+    config.add_route('searchapi', '/+search', header='Accept:application/json')
     config.scan()
